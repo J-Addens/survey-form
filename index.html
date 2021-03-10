@@ -1,22 +1,64 @@
-<h1 id="title">Movie Genre Survey Form</h1>
-<p id="descirption"><em>Thank you for helping by filling in this form!</em></p>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        font-family: "Lucida Console";
+      }
+    </style>
+  </head>
 
-<form id="survey-form">
-  <div id="name">
-    <label id="name" for="name">Name</label>
-    <input id="name" type="text" placeholder="Enter your name." required><br>
-  </div>
-  <div id="email">
-    <label id="email" for="email">Email</label>
-    <input id="email" type="email" placeholder="Enter your email." required><br>
-  </div>
-  <div id="age">
-    <label id="age" for="age">Age <em>(optional)</em></label>
-    <input id="number" type="number" min="10" max="99" placeholder="Age."><br>
-  </div>
-  <div id="recommend">
-    <select id="dropdown" name="role" required>
-      <option value="student">Student</option>
-      <option value="fulltime">Full-time Job</option>
-      <option value="retired">Retired</option>
-</form>
+  <body>
+    <h1 id="title">Movie Genre Survey Form</h1>
+    <p id="description"><em>
+      This is a survey where you can tell us about your favourite streaming habits!
+      </em></p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name: </label>
+      <input type="text" placeholder="Enter your name." id="name" required><br>
+      <label id="email-label" for="email">Email: </label>
+      <input id="email" type="email" placeholder="Enter your email." required><br>
+      <label id="number-label" for="age">Age: <em>(optional)</em></label>
+      <input id="number" type="number" min="10" max="99" placeholder="Age."><br>
+      <br>
+      <select id="dropdown" name="role" required>
+        <option value="student">Student</option>
+        <option value="full-time-job">Full Time Job</option>
+        <option value="full-time-learner">Full Time Learner</option>
+        <option value="prefere-not">Prefere not to say</option>
+        <option value="other">Other</option>
+      </select><br>
+      <br>
+      <input type="radio" name="screenplay" value="films">
+      <label for="films">Films</label><br>
+      <input type="radio" name="screenplay" value="series">
+      <label for="series">Series</label><br>
+      <input type="radio" name="screenplay" value="documantaries">
+      <label for="documantaries">Documantaries</label><br>
+      <br>
+
+      <input type="checkbox" name="genre1" value="action">
+      <label for="genre1">Action</label><br>
+      <input type="checkbox" name="genre1" value="comedy">
+      <label for="genre2">Comedy</label><br>
+      <input type="checkbox" name="genre3" value="horror">
+      <label for="genre3">Horror</label><br>
+      <input type="checkbox" name="genre4" value="romance">
+      <label for="genre4">Romance</label><br>
+      <input type="checkbox" name="genre5" value="thriller">
+      <label for="genre5">Thriller</label><br>
+      <input type="checkbox" name="genre6" value="detective">
+      <label for="genre6">Detective</label><br>
+
+      <br>
+      <label for="comments">Any comments or suggestions?</label><br>
+      <textarea name="comments" id="comments" rows="8" cols="80" placeholder="Enter your comment here..."></textarea><br>
+      <br>
+      <input type="submit" id="submit" value="Submit">
+
+    </form>
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+
+  </html>
