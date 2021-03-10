@@ -3,7 +3,47 @@
     <style>
       body {
         font-family: "Lucida Console";
+        color: #ff0066;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-image: linear-gradient(
+          115deg,
+          rgba(58, 58, 158, 0.9),
+          rgba(136, 136, 206, 0.7)
+          ), url("Images/movies-background.jpg");
+        background-repeat: repeat;
       }
+      form {
+        display: block;
+        padding: 2.5rem 0.625rem;
+        border-radius: 0.25rem;
+        width: 300px;
+        padding: 50px;
+        margin: auto;
+        background-color: rgba(27, 15, 98, 0.81);
+        color: #ff0066;
+      }
+      h1 {
+        padding: 2.5rem 0.625rem;
+        border-radius: 0.25rem;
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: center;
+        margin: auto;
+        align-content: center;
+        color: white;
+      }
+      p {
+        padding: 2.5rem 0.625rem;
+        border-radius: 0.25rem;
+        font-weight: 200;
+        line-height: 1.2;
+        text-align: center;
+        margin: auto;
+        align-content: center;
+        color: white;
+      }
+
     </style>
   </head>
 
@@ -14,13 +54,16 @@
       </em></p>
 
     <form id="survey-form">
-      <label id="name-label" for="name">Name: </label>
+      <label for="">General</label><br><br>
+      <label id="name-label" for="name">Name: </label><br>
       <input type="text" placeholder="Enter your name." id="name" required><br>
-      <label id="email-label" for="email">Email: </label>
+      <label id="email-label" for="email">Email: </label><br>
       <input id="email" type="email" placeholder="Enter your email." required><br>
-      <label id="number-label" for="age">Age: <em>(optional)</em></label>
+      <label id="number-label" for="age">Age: <em>(optional)</em></label><br>
       <input id="number" type="number" min="10" max="99" placeholder="Age."><br>
       <br>
+
+      <label for="role">Which option best describes your current role?</label>
       <select id="dropdown" name="role" required>
         <option value="student">Student</option>
         <option value="full-time-job">Full Time Job</option>
@@ -28,6 +71,7 @@
         <option value="prefere-not">Prefere not to say</option>
         <option value="other">Other</option>
       </select><br>
+
       <br>
       <input type="radio" name="screenplay" value="films">
       <label for="films">Films</label><br>
@@ -52,7 +96,7 @@
 
       <br>
       <label for="comments">Any comments or suggestions?</label><br>
-      <textarea name="comments" id="comments" rows="8" cols="80" placeholder="Enter your comment here..."></textarea><br>
+      <textarea name="comments" id="comments" rows="8" cols="40" placeholder="Enter your comment here..."></textarea><br>
       <br>
       <input type="submit" id="submit" value="Submit">
 
